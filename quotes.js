@@ -5281,5 +5281,10 @@ function getRandomQuote() {
 }
 
 const quoteElement = document.getElementById("quote");
-
 quoteElement.textContent = getRandomQuote();
+
+const nextQuoteButton = document.getElementById("nextQuoteButton");
+
+nextQuoteButton.addEventListener("click", function () {
+  window.location.reload();
+});
